@@ -637,3 +637,147 @@ h1{font-size:44px; line-height:1.06; margin:0 0 10px}
 @media (max-width: 600px){
   .board-grid{ grid-template-columns:1fr; }
 }
+
+
+/* === Header Crisis Button === */
+.btn-crisis{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  white-space:nowrap;
+  padding:12px 28px;
+  min-width:230px;
+  border-radius:40px;
+  background-color:#e8c3cf;
+  color:#000;
+  font-weight:700;
+  text-decoration:none;
+  line-height:1;
+  transition:0.2s ease;
+}
+.btn-crisis:hover{ background-color:#ddb2c1; }
+
+
+/* === Job Seeker Cards === */
+.job-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+  margin-top:18px;
+}
+.job-card{
+  background:#fff;
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 10px 28px rgba(0,0,0,.08);
+  border:1px solid rgba(0,0,0,.06);
+}
+.job-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+}
+.job-card h3{
+  margin:0;
+  font-size:18px;
+}
+.job-open{
+  font-weight:800;
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#f7e6ec; /* soft pink */
+  color:#35151f;
+  white-space:nowrap;
+}
+@media (max-width: 992px){
+  .job-grid{ grid-template-columns:repeat(2, 1fr); }
+}
+@media (max-width: 600px){
+  .job-grid{ grid-template-columns:1fr; }
+}
+
+
+/* === Role Pages: Match UI === */
+.role-layout{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:22px;
+  margin-top:18px;
+}
+.role-panel{
+  background:#fff;
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 10px 28px rgba(0,0,0,.08);
+  border:1px solid rgba(0,0,0,.06);
+}
+.role-title{
+  margin:0 0 6px;
+}
+.role-sub{
+  margin:0 0 14px;
+}
+.qual-group{
+  margin-top:14px;
+}
+.qual-group h3{
+  margin:0 0 10px;
+  font-size:14px;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+  opacity:.8;
+}
+.qual-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:10px;
+}
+.qual-item{
+  padding:10px 12px;
+  border-radius:12px;
+  background:#fff6f9;
+  border:1px solid rgba(0,0,0,.06);
+}
+.qual-item strong{
+  display:block;
+  margin-bottom:4px;
+}
+.qual-item.matched{
+  background:#e9f8ef;
+  border-color: rgba(26, 127, 55, .35);
+}
+.picker h3{
+  margin:0 0 10px;
+}
+.picker .muted{ margin-top:0; }
+.check{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  cursor:pointer;
+}
+.check input{ margin-top:3px; }
+.picker ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 0;
+  display:grid;
+  gap:10px;
+}
+.picker .addrow{
+  display:flex;
+  gap:10px;
+  margin-top:12px;
+}
+.picker .addrow input{
+  flex:1;
+}
+@media (max-width: 992px){
+  .role-layout{ grid-template-columns:1fr; }
+}
+
